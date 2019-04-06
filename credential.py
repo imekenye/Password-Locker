@@ -1,3 +1,6 @@
+import random
+
+
 class Credential:
     """
     Class that creates new instance of credentials
@@ -14,6 +17,13 @@ class Credential:
         save_contact method saves credentials objects into credential_list    
         """
         Credential.credential_list.append(self)
+
+    def generate_pass(self):
+        chars = "abcdefghijklmnopqrstuvw/;'[]=)(*$@"
+        password = ""
+        for i in range(10):
+            password += random.choice(chars)
+        return password
 
     @classmethod
     def display_credential(cls):
