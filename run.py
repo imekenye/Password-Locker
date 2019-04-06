@@ -18,3 +18,17 @@ def create_credential(name, passw, email):
 
     new_credential = Credential(name, passw, email)
     return new_credential
+
+
+def save_users(user):
+    """
+    Function to save user
+    """
+    user.save_user()
+
+
+def save_credentials(credential):
+    """
+    Function to save user credentials
+    """
+    credential.save_credential()
