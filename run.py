@@ -32,3 +32,24 @@ def save_credentials(credential):
     Function to save user credentials
     """
     credential.save_credential()
+
+
+def delete_credential(credential):
+    """
+    Function to delete credentials
+    """
+    credential.delete_credential()
+
+
+def display_credentials():
+    """
+    Function that returns all the saved credentials
+    """
+    return Credential.display_credential()
+
+
+def generate_password(User):
+    """
+    Function that generates random passwords
+    """
+    return User.generate_pass()
