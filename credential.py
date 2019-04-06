@@ -14,3 +14,10 @@ class Credential:
         save_contact method saves credentials objects into credential_list    
         """
         Credential.credential_list.append(self)
+
+    @classmethod
+    def display_credential(cls):
+        """
+        method that returns the credentials list
+        """
+        return cls.credential_list
