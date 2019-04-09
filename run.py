@@ -54,7 +54,7 @@ def generate_password(num):
     Function that generates random passwords
     """
     for i in range(num):
-        return random.randint(0, 100)
+        return randint(0, 100)
 
 
 def main():
@@ -87,6 +87,7 @@ def main():
                 else:
                     print("please choose Y or N")
 
+            userPass = input()
             save_users(create_user(uName, userPass))
             print('\n')
             print(f"Your new Username is --- {uName}")
@@ -137,6 +138,7 @@ def main():
                                 else:
                                     print(
                                         "You have to choose something..here we go again Y/N")
+                                    credentialpass = input()
                             save_credentials(create_credential(
                                 usName, mailName, credentialpass))
 
