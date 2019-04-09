@@ -28,13 +28,6 @@ class User:
         """
         User.user_list.remove(self)
 
-    def generate_pass(self):
-        chars = "abcdefghijklmnopqrstuvw/;'[]=)(*$@"
-        password = ""
-        for i in range(10):
-            password += random.choice(chars)
-        return password
-
     @classmethod
     def display_users(cls):
         """
