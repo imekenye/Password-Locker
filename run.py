@@ -65,7 +65,7 @@ def main():
     print('\n')
 
     while True:
-        print("Type in a number according to what you would want to do:\n 1 - Create account \n 2 - Log In \n 3 - exit")
+        print("Type in a number according to what you would want to do:\n 1 - Create account \n 2 - Log In")
         chosen = int(input())
         print('\n')
 
@@ -76,8 +76,8 @@ def main():
             while True:
                 answr = input().upper()
                 if answr == 'Y':
-                    passwrd = generate_password(10)
-                    print(f"This is your password - {passwrd}")
+                    userPass = generate_password(10)
+                    print(f"This is your password - {userPass}")
                     break
                 elif answr == 'N':
                     print("Enter your password for the account")
@@ -87,7 +87,7 @@ def main():
                 else:
                     print("please choose Y or N")
 
-            userPass = input()
+
             save_users(create_user(uName, userPass))
             print('\n')
             print(f"Your new Username is --- {uName}")
@@ -96,7 +96,7 @@ def main():
             print("Please enter username?")
             uName = input()
             print("Password please?")
-            uPass = input()
+            userPass = input()
 
             if not User.user_list:  # check if list is empty
                 print('\n')
@@ -104,7 +104,7 @@ def main():
 
             for user in User.user_list:
 
-                if uName == user.username and uPass == user.password:
+                if uName == user.username and userPass == user.password:
                     print("Login Success!!")
                     print('\n')
 
