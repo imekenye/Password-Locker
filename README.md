@@ -16,7 +16,7 @@ Written by *Isaiah Mekenye*.
 | Behavior our program should handle  | Input description      | Output description                                           |
 | ----------------------------------- | ---------------------- | ------------------------------------------------------------ |
 | `Ask to create a new account`       | Username and password  | Success Message output                                       |
-| `Choose to display credentials`     | Type '3' when prompted | Account credentials displayed                                |
+| `Choose to display credentials`     | Type '2' when prompted | Account credentials displayed                                |
 | `Choose to auto generate passwords` | Choose either Y/N      | Password auto generated or user generates their own password |
 | `Delete a credentials account`      | Choose '3'             | Account credentials are deleted                              |
 
