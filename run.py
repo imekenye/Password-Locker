@@ -138,7 +138,7 @@ def main():
                                 else:
                                     print(
                                         "You have to choose something..here we go again Y/N")
-                                    credentialpass = input()
+                            credentialpass = input()
                             save_credentials(create_credential(
                                 usName, mailName, credentialpass))
 
