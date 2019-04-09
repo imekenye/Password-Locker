@@ -18,13 +18,6 @@ class Credential:
         """
         Credential.credential_list.append(self)
 
-    def generate_pass(self):
-        chars = "abcdefghijklmnopqrstuvw/;'[]=)(*$@"
-        password = ""
-        for i in range(10):
-            password += random.choice(chars)
-        return password
-
     @classmethod
     def display_credential(cls):
         """

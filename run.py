@@ -92,6 +92,7 @@ def main():
             print('\n')
             print(f"Your new Username is --- {uName}")
             print('\n')
+
         elif chosen == 2:
             print("Please enter username?")
             uName = input()
